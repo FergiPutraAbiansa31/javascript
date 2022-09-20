@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gempa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <h3 class="text-center">INFO GEMPA</h3>
+    <table class="table text-center table-hover">
+        <thead>
+            <tr>
+                <th>NO</th>
+                <th>LOKASI</th>
+                <th>SKALA</th>
+                <th>DAMPAK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                let no = 1;
+                class infoGempa{
+                    constructor(lokasi, skala){
+                        this.lokasi = lokasi;
+                        this.skala = skala;
+                    }
+
+                    Dampak(){
+                        if (this.skala <= 2 && this.skala > 0) this.dampak = 'Tidak Terasa';
+                        else if (this.skala > 2 && this.skala <= 4) this.dampak = 'Bangunan Retak - Retak';
+                        else if (this.skala > 4 && this.skala <= 6) this.dampak = 'Bangunan Roboh';
+                        else if (this.skala > 6) this.dampak = 'Bangunan Roboh dan Berpotensi Tsunami';
+                        else this.dampak = '';
+                        return this.dampak;
+                    }
+
+                    cetak(){
+                        document.write(`
+                        <tr>
+                            <td>${no++}</td>
+                            <td>${this.lokasi}</td>
+                            <td>${this.skala}</td>
+                            <td>${this.Dampak()}</td>
+                        </tr>`)
+                    }
+                }
+
+                g1 = new infoGempa('Aceh',9);
+                g2 = new infoGempa('Yogyakarta',5);
+                g3 = new infoGempa('Padang',7);
+                g4 = new infoGempa('Palu',7);
+                g5 = new infoGempa('Lombok',6);
+                g6 = new infoGempa('Nias',8);
+                g7 = new infoGempa('Bengkulu',7);
+                g8 = new infoGempa('Jakarta',2);
+                g9 = new infoGempa('Banten',7);
+                g10 = new infoGempa('Mentawai',3);
+
+                g1.cetak();
+                g2.cetak();
+                g3.cetak();
+                g4.cetak();
+                g5.cetak();
+                g6.cetak();
+                g7.cetak();
+                g8.cetak();
+                g9.cetak();
+                g10.cetak();
+            </script>
+        </tbody>
+    </table>
+</body>
+
+</html>
