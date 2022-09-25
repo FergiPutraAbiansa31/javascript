@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tugas 7 Fergi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/css.css">
+  </head>
+  <body>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-center align-items-center pt-4">
+                <p class="fw-bold fs-1">Suara Hewan</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="container my-5">
+            <div class="accordion " id="accordionExample">
+              
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Hewan Unggas
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="d-flex justify-content-center">
+                                <div id="bebek" class="card mx-5" style="width: 15rem;" onclick="bebek">
+                                    <img id="bebek-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="bebek-text">Bebek</div>
+                                </div>
+                                 <div id="ayam" class="card" style="width: 15rem;" onclick="ayam">
+                                    <img id="ayam-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="ayam-text">Ayam</div>
+                                </div>
+                                <div id="angsa" class="card mx-5" style="width: 15rem;" onclick="angsa">
+                                    <img id="angsa-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="angsa-text">Angsa</div>
+                                </div>
+                                <div id="burung" class="card" style="width: 15rem;" onclick="burung">
+                                    <img id="burung-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="burung-text">Burung</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Hewan Ternak
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="d-flex justify-content-center">
+                                <div id="sapi" class="card mx-5" style="width: 15rem;" onclick="sapi">
+                                    <img id="sapi-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="sapi-text">Sapi</div>
+                                </div>
+                                <div id="kelinci" class="card" style="width: 15rem;" onclick="kelinci">
+                                    <img id="kelinci-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="kelinci-text">Kelinci</div>
+                                </div>
+                                <div id="kambing" class="card mx-5" style="width: 15rem;" onclick="kambing">
+                                    <img id="kambing-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="kambing-text">Kambing</div>
+                                </div>
+                                <div id="kerbau" class="card" style="width: 15rem;" onclick="kerbau">
+                                    <img id="kerbau-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="kerbau-text">Kerbau</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Hewan Buas
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="d-flex justify-content-center">
+                                <div id="singa" class="card mx-5" style="width: 15rem;" onclick="singa">
+                                    <img id="singa-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="singa-text">Singa</div>
+                                </div>
+                                <div id="harimau" class="card" style="width: 15rem;" onclick="harimau">
+                                    <img id="harimau-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="harimau-text">Harimau</div>
+                                </div>
+                                <div id="buaya" class="card mx-5" style="width: 15rem;" onclick="buaya">
+                                    <img id="buaya-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="buaya-text">Buaya</div>
+                                </div>
+                                <div id="beruang" class="card" style="width: 15rem;" onclick="beruang">
+                                    <img id="beruang-img" src="images/bg.png" class="card-img-top" alt="...">
+                                    <div id="beruang-text">Beruang</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="tugas7.js"></script>
+  </body>
+</html>

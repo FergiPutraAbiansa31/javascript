@@ -1,0 +1,34 @@
+#bebek,
+#ayam,
+#angsa,
+#burung,
+#sapi,
+#kelinci,
+#kambing,
+#kerbau,
+#singa,
+#harimau,
+#buaya,
+#beruang,{
+    cursor: pointer;
+}
+
+#bebek-text,
+#ayam-text,
+#angsa-text,
+#burung-text,
+#sapi-text,
+#kelinci-text,
+#kambing-text,
+#kerbau-text,
+#singa-text,
+#harimau-text,
+#buaya-text,
+#beruang-text,{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color::black;
+    font-size: 30px;
+}
